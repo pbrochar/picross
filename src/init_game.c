@@ -26,6 +26,7 @@ Pour ajouter une nouvelle grille :
 */
 int picross_from_file(struct s_game *game)
 {
+	srand(time(NULL));
 	FILE *image;
 	char *images[] = {"images/pic1", "images/pic2", "images/pic3", "images/pic4"};
 	int number_of_files = 4;
